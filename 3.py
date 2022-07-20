@@ -2,20 +2,15 @@
 # делителей числа N.
 #(1 - составное число)
 
-
+'''
 a = int(input("Введите число: "))
 spisok = []
-spisok1 = []
+
 for i in range(2, a // 2+1):
     if (a % i == 0):
         spisok.append(i)
-        for j in range(2,i+1):
-            if i%j ==0:
-                spisok1.append(j)
-
-
-print(f"Cписок делилитей числа {a}  = {spisok}")
-print(spisok1)
+print(f"Cписок делилитей числа {a}  = {spisok}  {a}")
+'''
 
 '''
 n = int(input("n= "))
@@ -29,7 +24,7 @@ for i in range(2, n+1):
         lst.append(i)
 print(lst)
 '''
-'''
+
 numb = int(input("Введите целое число: "))
 print("Простые:", end = " ")
 for i in range(numb - 1, 1, -1):
@@ -39,4 +34,4 @@ for i in range(numb - 1, 1, -1):
             if (i % j == 0):
                 is_simple = is_simple + 1 # Увеличиваем, если находим делитель
         if (is_simple == 0): # Если делителей не было найдено, выводим
-            print(i, end = " ")'''
+            print(i, end = " ")
