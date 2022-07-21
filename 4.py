@@ -7,10 +7,8 @@ import random
 stepen = int(input("Введите старшую степень многочлена "))
 equalString = " "
 for i  in range(stepen,-1,-1):
-    equalString +=str(random.randint(0,100))+'*' + 'x'+ '^' + str(i)+"+" + " "
-
-#print(equalString)
-finalString = equalString[:-2] + " " + "=" + " " + "0"
+        equalString +=str(random.randint(0,100))+'*' + 'x'+ '^' + str(i)+ " " + "+" + " "
+finalString = equalString[:-6] + " " + "=" + " " + "0"
 print(finalString)
 
 
